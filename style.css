@@ -1,0 +1,260 @@
+/* 全体設定 */
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ヘッダー */
+header {
+    background: linear-gradient(to right, #1976d2, #42a5f5);
+    color: #fff;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffca28;
+    transform: scale(1.1);
+}
+
+/* セクション */
+section {
+    padding: 4rem 0; /* セクション間の隙間を小さく */
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Aboutセクション */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #e3f2fd;
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.about-icon img {
+    width: 120px; /* アイコンのサイズを小さく */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content h2 {
+    font-size: 2rem;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+}
+
+.about-content .timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content .timeline li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.about-content .intro-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #1976d2;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Skills */
+#skills {
+    padding: 4rem 0;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1976d2;
+}
+
+.skills-category {
+    margin: 2rem 0;
+}
+
+.skills-category h3 {
+    font-size: 1.8rem;
+    color: #1e88e5; /* 青色 */
+    margin-bottom: 1rem;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#skills ul li {
+    background: linear-gradient(to right, #42a5f5, #64b5f6); /* 青色のグラデーション */
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#skills ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects */
+#projects .project {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: flex; /* 画像を右に配置 */
+    gap: 1.5rem;
+}
+
+#projects .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#projects .project h3 {
+    color: #1976d2;
+    margin: 0 0 1rem;
+}
+
+#projects .project ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#projects .project ul li {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    background: #e3f2fd;
+    padding: 3rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1976d2;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* フッター */
+footer {
+    background: #1976d2;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: left; /* スマホ画面でテキストを左寄せ */
+    }
+
+    .about-content {
+        text-align: left; /* スマホでもテキストを左寄せ */
+    }
+
+    .about-icon img {
+        width: 100px; /* アイコンを少し小さく */
+        height: 100px;
+    }
+
+    .about-content .timeline {
+        margin-top: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .skills-category h3 {
+        font-size: 1.5rem;
+    }
+
+    #projects .project {
+        flex-direction: column;
+        margin: 1.5rem 0;
+    }
+}
