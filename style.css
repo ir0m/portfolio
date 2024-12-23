@@ -72,7 +72,7 @@ section {
 }
 
 .about-section {
-    display: flex;
+    display:flex;
     align-items: center;
     gap: 2rem;
     background: #e3f2fd;
@@ -81,8 +81,8 @@ section {
 }
 
 .about-icon img {
-    width: 120px; /* アイコンのサイズを小さく */
-    height: 120px;
+    width: 200px; /* アイコンのサイズを小さく */
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -92,14 +92,7 @@ section {
     font-size: 1.5rem;
 }
 
-.about-content .timeline {
-    list-style: none;
-    padding: 0;
-}
-
-.about-content .timeline li {
-    text-align: left;
-    margin-bottom: 0.5rem;
+.about-content h3 {
     font-size: 1rem;
 }
 
@@ -163,7 +156,19 @@ section {
     gap: 1.5rem;
 }
 
-#projects .project:hover {
+#projects .project {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#projects .project-public:hover {
     transform: scale(1.02);
     background: #e3f2fd;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -204,7 +209,7 @@ section {
     gap: 1.5rem;
 }
 
-#works .work:hover {
+#works .work-public:hover {
     transform: scale(1.02);
     background: #e3f2fd;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -275,8 +280,8 @@ footer {
     }
 
     .about-icon img {
-        width: 100px; /* アイコンを少し小さく */
-        height: 100px;
+        width: 130px; /* アイコンを少し小さく */
+        height: 130px;
     }
 
     .about-content .timeline {
