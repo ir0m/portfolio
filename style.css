@@ -96,6 +96,10 @@ section {
     font-size: 1rem;
 }
 
+.about-content h4 {
+    font-size: 0.8rem;
+}
+
 /* Skills */
 #skills {
     padding: 4rem 0;
